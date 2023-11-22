@@ -8,6 +8,17 @@ function HomePage() {
         <Header />
         <div id='blogParent'>
             <BlogCard />
+            <BlogCard />
+            <BlogCard />
+            <BlogCard />
+            <BlogCard />
+            <BlogCard />
+            <BlogCard />
+            <BlogCard />
+            <BlogCard />
+            <BlogCard />
+            
+            
 
         </div>
        </div>

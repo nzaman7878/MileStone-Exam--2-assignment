@@ -3,7 +3,7 @@ import "/styles/blogCard.css"
 
 function BlogCard() {
   return (
-    <div className='BlogCard'>
+    <div className='blogCard'>
        <img src="" alt="" />
        <h1>Blog Title: Here will be your blog Title</h1>
        <p>
