@@ -1,0 +1,44 @@
+/* Apply a reset for default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+#Header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(50, 50, 93);
+    color: white;
+    align-items: center;
+}
+
+/* Container for buttons with gap */
+#Header nav {
+    display: flex;
+    gap: 10px; /* Add gap between child elements */
+}
+
+
+#Header nav button {
+    min-width: 120px; 
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+    /* Add some spacing around the text within the button */
+    padding: 15px;
+
+    /* Add transition for a smooth hover effect */
+    transition: background-color 0.3s ease;
+}
+
+/* Style the buttons on hover */
+#Header nav button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    
+}

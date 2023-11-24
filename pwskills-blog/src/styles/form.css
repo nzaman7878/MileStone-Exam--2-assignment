@@ -1,0 +1,45 @@
+/* Form Parent Container */
+#formParent {
+    width: 100vw;
+    min-height: 100vh; /* Use min-height for better responsiveness */
+    display: grid;
+    place-items: center; /* Simplified centering using place-items */
+}
+
+/* Form Container */
+#form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px; /* Increased padding for better spacing */
+    border-radius: 10px;
+    width: 400px;
+    max-width: 100%; /* Ensure the form is responsive to smaller screens */
+    background-color: rgb(50, 50, 93);
+    color: white;
+    text-align: center;
+    gap: 15px; /* Increased gap for better spacing */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Added a subtle box shadow for depth */
+}
+
+/* Form Elements */
+#form * {
+    height: 45px;
+    padding: 10px; /* Increased padding for better visual appearance */
+    border-radius: 10px;
+    border: none;
+}
+
+/* Form Submit Button */
+#form button {
+    cursor: pointer;
+    background-color:white;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+/* Form Submit Button Hover Effect */
+#form button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+

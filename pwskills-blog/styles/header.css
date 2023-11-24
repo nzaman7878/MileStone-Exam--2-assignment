@@ -1,19 +1,19 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Ensure box-sizing is set globally */
+*{
+    margin: 0px;
+    padding: 0px;
 }
-
-#Header {
+#Header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 20px;
-    background-color: rgb(50, 50, 93);
+    background-color: rgb(50,50,93);
     color: white;
+    align-items: center;
+    margin: 0px;
+    
 }
 
-#Header div {
+#Header div{
     display: flex;
     gap: 10px;
 }
@@ -23,12 +23,4 @@
     height: 45px;
     border: none;
     border-radius: 5px;
-    cursor: pointer; /* Add cursor pointer for better UX */
-    background-color: #4CAF50; /* Add a background color for the button */
-    color: white; /* Text color for the button */
-    transition: background-color 0.3s ease; /* Smooth transition effect on hover */
-}
-
-#Header div button:hover {
-    background-color: #45a049; /* Darker color on hover */
 }

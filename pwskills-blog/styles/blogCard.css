@@ -1,45 +1,32 @@
-.blogCard {
+.blogCard{
     display: flex;
     flex-direction: column;
     padding: 10px;
     border-radius: 10px;
     width: 250px;
     height: 450px;
-    background-color: rgb(34, 41, 49);
+    background-color: rgb(34,41,49);
     color: white;
     gap: 10px;
-    box-sizing: border-box; /* Include padding and border in the total width and height */
+
 }
 
-.blogCard img {
-    width: 100%; /* Make the image responsive within its container */
+.blogCard img{
+    width: 250px;
     height: 250px;
     border-radius: 10px;
-    object-fit: cover; /* Ensure the image covers the entire container */
 }
 
 .blogCard p {
-    max-height: 200px; /* Use max-height for better responsiveness */
-    overflow: hidden; /* Hide overflowing content */
-    text-overflow: ellipsis; /* Display an ellipsis (...) to indicate text overflow */
+    height: 200px;
+    overflow: scroll;
 }
-
-.blogCard h1 {
-    font-size: 18px; /* Slightly increased font size for better readability */
-    margin-bottom: 5px; /* Add a small margin bottom for separation */
+.blogCard h1{
+    font-size: 17px;
 }
-
-.blogCard button {
-    width: 100%; /* Make the button fill the container width */
+.blogCard button{
+    width: 250px;
     height: 45px;
     border: none;
     border-radius: 5px;
-    background-color: #4CAF50; /* Add a background color for the button */
-    color: white; /* Text color for the button */
-    cursor: pointer; /* Change cursor on hover for better feedback */
-    transition: background-color 0.3s ease; /* Smooth transition effect on hover */
-}
-
-.blogCard button:hover {
-    background-color: #45a049; /* Darker color on hover */
 }

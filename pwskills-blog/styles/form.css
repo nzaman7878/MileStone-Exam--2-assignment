@@ -1,0 +1,26 @@
+#formParent{
+    width: 100vw;
+    height: 500px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    background-color: rgb(50,50,93);
+    color: white;
+    text-align: center;
+    gap: 10px;
+}
+
+#form *{
+    height: 45px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}

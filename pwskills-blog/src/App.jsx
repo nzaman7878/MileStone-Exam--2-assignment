@@ -1,16 +1,14 @@
-import HomePage from '../pages/HomePage' 
-import '/styles/homePage.css'
+import { CustomRoutes } from "./AllRoutes/CustomRoutes";
+import { Header } from "./components/Header";
+import { HomePage } from "./pages/HomePage";
 
 function App() {
-  
-
   return (
-    <>
-       <div>
-        <HomePage />
-       </div>
-    </>
-  )
+    <div className="App">
+      <Header/>
+      <CustomRoutes/>
+    </div>
+  );
 }
 
-export default App
+export default App;
