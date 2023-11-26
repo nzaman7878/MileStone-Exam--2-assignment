@@ -1,21 +1,24 @@
-
+/* Reset default margin, padding, and set font family */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #6b63ff;
-  color: #fff;
+  background-color: #6b63ff; /* Set background color for the entire page */
+  color: #fff; /* Set text color to white */
 }
 
+/* Styling for the main app container */
 .app {
   text-align: center;
   margin: 20px;
 }
 
+/* Styling for the input container */
 .input-container {
   margin-bottom: 20px;
 }
 
+/* Styling for the input field within the input container */
 .input-container input {
   padding: 10px;
   font-size: 16px;
@@ -24,6 +27,7 @@ body {
   margin-right: 10px;
 }
 
+/* Styling for buttons in the input container and task buttons */
 .input-container button,
 .task-button {
   padding: 10px 15px;
@@ -34,24 +38,29 @@ body {
   transition: background-color 0.3s ease;
 }
 
+/* Styling for the add task button */
 .input-container button {
   background-color: #3498db;
   color: #fff;
 }
 
+/* Hover effect for the add task button */
 .input-container button:hover {
   background-color: #2980b9;
 }
 
+/* Styling for the task buttons */
 .task-button {
   background-color: #27ae60;
   color: #fff;
 }
 
+/* Hover effect for the task buttons */
 .task-button:hover {
   background-color: #219f56;
 }
 
+/* Styling for the todo list grid */
 .todo-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -59,6 +68,7 @@ body {
   padding: 0;
 }
 
+/* Styling for each todo card */
 .todo-card {
   display: flex;
   flex-direction: column;
@@ -66,30 +76,35 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
-  background-color: #2c3e50; 
-  color: #fff;
+  background-color: #2c3e50; /* Set background color for each todo card */
+  color: #fff; /* Set text color to white */
   transition: background-color 0.3s ease;
 }
 
+/* Hover effect for each todo card */
 .todo-card:hover {
-  background-color: #34495e; 
+  background-color: #34495e;
 }
 
+/* Styling for completed todo cards */
 .todo-card.completed {
   background-color: rgb(0, 92, 0);
 }
 
+/* Styling for the todo actions container */
 .todo-actions {
   display: flex;
   flex-direction: column;
 }
 
+/* Styling for todo action buttons */
 .todo-actions button {
   margin-bottom: 10px;
   background-color: #e74c3c;
   color: #fff;
 }
 
+/* Hover effect for todo action buttons */
 .todo-actions button:hover {
   background-color: #c0392b;
 }
