@@ -1,35 +1,53 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from 'react';
+import TodoList from './components/TodoList.jsx';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [todos, setTodos] = useState([]);
+  const [task, setTask] = useState('');
+
+  const handleInputChange = (e) => {
+    setTask(e.target.value);
+  };
+
+  const handleSubmit = () => {
+    if (task.trim() !== '') {
+      setTodos([...todos, { title: task, status: 'pending' }]);
+      setTask('');
+    }
+  };
+
+  const handleUpdateStatus = (index) => {
+    const updatedTodos = [...todos];
+    updatedTodos[index].status =
+      updatedTodos[index].status === 'pending' ? 'completed' : 'pending';
+    setTodos(updatedTodos);
+  };
+
+  const handleRemoveTodo = (index) => {
+    const updatedTodos = todos.filter((_, i) => i !== index);
+    setTodos(updatedTodos);
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="app">
+      <h1>Todo App</h1>
+      <div className="input-container">
+        <input
+          type="text"
+          placeholder="Enter your task"
+          value={task}
+          onChange={handleInputChange}
+        />
+        <button onClick={handleSubmit}>Add Todo</button>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      <TodoList
+        todos={todos}
+        onUpdateStatus={handleUpdateStatus}
+        onRemoveTodo={handleRemoveTodo}
+      />
+    </div>
+  );
 }
 
-export default App
+export default App;

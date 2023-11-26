@@ -1,60 +1,78 @@
+/* Define custom colors using CSS variables */
 :root {
-  --primary-color: #4caf50;
-  --secondary-color: #333;
-  --accent-color: #ddd;
+  --primary-color: #001f3f; /* Primary color - Dark Blue */
+  --secondary-color: #ffff; /* Secondary color - White */
+  --accent-color: #ddd; /* Accent color - Light Gray */
+  --dark-blue: #18003f; /* Custom dark blue color */
+  --light-blue: #18014f; /* Custom light blue color */
 }
 
+/* Apply styles to the entire page */
+body {
+  background-color: var(--dark-blue); /* Set dark blue background for better contrast */
+  color: #fff; /* Set text color to white for better readability */
+}
+
+/* Styles for the main application container */
 .App {
   text-align: center;
-  background-color: #fff;
+  background-color: var(--light-blue); /* Set light blue background for the main container */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   margin: 50px auto;
-  max-width: 500px;
+  max-width: 1000px; /* Limit the maximum width of the container */
 }
 
+/* Styles for the main heading */
 h1 {
-  color: var(--secondary-color);
+  color: var(--secondary-color); /* Set secondary color for the main heading */
   margin-bottom: 20px;
 }
 
+/* Styles for input elements */
 input {
   padding: 12px;
   margin-right: 10px;
-  width: 60%;
+  width: 60%; /* Set the width of the input field */
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
+/* Styles for buttons */
 button {
   padding: 12px;
   cursor: pointer;
-  background-color: var(--primary-color);
+  background-color: var(--primary-color); /* Set primary color for buttons */
   color: #fff;
   border: none;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect on button hover */
 }
 
+/* Button hover effect */
 button:hover {
-  background-color: #45a049;
+  background-color: #03386d; /* Darken the button color on hover */
 }
 
+/* Styles for error messages */
 .error-message {
   color: red;
   margin: 10px 0;
 }
 
+/* Styles for movie details */
 .movie-details {
   margin-top: 20px;
   text-align: left;
 }
 
+/* Styles for movie details heading */
 .movie-details h2 {
   color: var(--secondary-color);
 }
 
+/* Styles for images in movie details */
 .movie-details img {
   max-width: 100%;
   height: auto;
@@ -62,18 +80,21 @@ button:hover {
   border-radius: 5px;
 }
 
+/* Styles for paragraphs in movie details */
 .movie-details p {
-  color: #555;
+  color: #001f3f; /* Set a specific color for paragraphs in movie details */
   margin: 10px 0;
 }
 
+/* Styles for search results grid */
 .search-results {
-  margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 20px;
 }
 
+/* Styles for each result item in the grid */
 .result-item {
   border: 1px solid var(--accent-color);
   border-radius: 5px;
@@ -82,29 +103,32 @@ button:hover {
   cursor: pointer;
 }
 
+/* Styles for images within result items */
 .result-item img {
   max-width: 100%;
   height: auto;
   border-bottom: 1px solid var(--accent-color);
 }
 
+/* Styles for paragraphs within result items */
 .result-item p {
   padding: 10px;
   color: var(--secondary-color);
   margin: 0;
 }
 
+/* Result item hover effect */
 .result-item:hover {
   transform: scale(1.05);
 }
 
-/* Responsive styles */
+/* Responsive styles for small screens */
 @media screen and (max-width: 600px) {
   input {
-    width: 100%;
+    width: 100%; /* Set the width to 100% for better responsiveness */
   }
 
   .search-results {
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* Adjust grid columns for smaller screens */
   }
 }
