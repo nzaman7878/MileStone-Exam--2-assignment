@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Header } from "../components/Header";
-import "../styles/form.css";
+import "./styles/form.css";
 
 // Functional component for adding a new blog
 export const AddBlog = ({ updateData, prevData = [] }) => {

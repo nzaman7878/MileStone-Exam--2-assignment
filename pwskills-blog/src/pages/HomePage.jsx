@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Header } from "../components/Header";
 import { BlogCard } from "../components/BlogCard";
-import "../styles/homepage.css";
+import "./styles/homepage.css";
 
 // Functional component for the home page
 export const HomePage = ({ blogData = [], setBlogData }) => {

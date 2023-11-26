@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/blogCard.css"; // Import the CSS for styling
+import "./styles/blogCard.css"; // Import the CSS for styling
 import { NavLink } from "react-router-dom";
 
 // Functional component for displaying a blog card

@@ -1,51 +1,32 @@
-/* Blog Card */
-.blogCard {
+.blogCard{
     display: flex;
     flex-direction: column;
-    padding: 15px; /* Increased padding for better spacing */
+    padding: 10px;
     border-radius: 10px;
     width: 250px;
     height: 450px;
-    background-color: rgb(34, 41, 49);
+    background-color: rgb(34,41,49);
     color: white;
     gap: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added a subtle box shadow for depth */
+
 }
 
-/* Blog Card Image */
-.blogCard img {
-    width: 100%; /* Make the image responsive to the container */
+.blogCard img{
+    width: 250px;
     height: 250px;
     border-radius: 10px;
-    object-fit: cover; /* Ensure the image covers the entire container */
 }
 
-/* Blog Card Content */
 .blogCard p {
     height: 200px;
-    overflow: hidden; /* Changed to 'hidden' to hide the scrollbar and reveal on hover */
-    text-overflow: ellipsis; /* Added ellipsis for overflow text */
-    margin-bottom: 10px; /* Added margin for better spacing */
+    overflow: scroll;
 }
-
-.blogCard h1 {
-    font-size: 18px; /* Slightly increased font size */
-    margin-bottom: 10px; /* Added margin for better spacing */
+.blogCard h1{
+    font-size: 17px;
 }
-
-/* Blog Card Button */
-.blogCard button {
-    width: 100%; /* Make the button span the entire width of the card */
+.blogCard button{
+    width: 250px;
     height: 45px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-    background-color:white;
-    color: black;
-    transition: background-color 0.3s ease;
-}
-
-/* Blog Card Button Hover Effect */
-.blogCard button:hover {
-    background-color:  rgba(255, 255, 255, 0.24);
 }

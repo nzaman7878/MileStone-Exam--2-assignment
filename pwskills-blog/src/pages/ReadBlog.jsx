@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../styles/ReadBlog.css";
+import "./styles/ReadBlog.css";
 import { useParams } from "react-router-dom";
 
 // Functional component for reading a single blog

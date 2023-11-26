@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "../styles/header.css";
+import "./styles/header.css";
 
 // Functional component for the website header
 export const Header = () => {
